@@ -1,5 +1,4 @@
 {
     "header" : "<h1>Software for neutron imaging</h1>",
-    "mainbody" : "<p>An imaging experiment usually produce large data sets that need to be processed to provide the answers you seek. This requires knowledge, experience, time, and not to forget the right tools. The aim of this site is to provide neutron imaging users with free and open source tools that helps in the process of evaluating their imaging data.</p>
-    <h2>Tools provided in the project</h2>"
+    "mainbody" : "<p>An imaging experiment usually produce large data sets that need to be processed to provide the answers you seek. This requires knowledge, experience, time, and not to forget the right tools. The aim of this site is to provide neutron imaging users with free and open source tools that helps in the process of evaluating their imaging data.</p><H2>Test</H2>"
 }
