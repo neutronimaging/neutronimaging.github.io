@@ -173,13 +173,16 @@
     };
 
     function loadPage() {
-    let requestURL = 'muhrec.json';
+    let requestURL = 'https://neutronimaging.github.io/muhrec.json';
 
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.onload = function() {
       const pageContents = request.response;
-      document.getElementById("mainbody").innerHTML = pageContents.mainbody;
+      if (pageContents.header)
+        document.getElementById("header").innerHTML = pageContents.header;
+      if (pageContents.mainbody)
+        document.getElementById("mainbody").innerHTML = pageContents.mainbody;
     };
     request.responseType = 'json';
     request.send();
