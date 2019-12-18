@@ -36,7 +36,7 @@
         <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home<span class="caret"></span></a></li>
+            <li><a href="<script>loadPage();</script>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home<span class="caret"></span></a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Releases<span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -156,5 +156,35 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
+  <script type="text/javascript">
+
+    function loadPage_old() {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() 
+      {
+        if (this.readyState == 4 && this.status == 200) 
+        {
+          var myObj = JSON.parse(this.responseText);
+          document.getElementById("mainbody").innerHTML = myObj.mainbody;
+        }
+      };
+      xmlhttp.open("GET", "muhrec.json", true);
+      xmlhttp.send();
+    };
+
+    function loadPage() {
+    let requestURL = 'muhrec.json';
+
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.onload = function() {
+      const pageContents = request.response;
+      document.getElementById("mainbody").innerHTML = pageContents.mainbody;
+    };
+    request.responseType = 'json';
+    request.send();
+    };
+
+  </script>
   </body>
 </html>
