@@ -158,22 +158,8 @@
 
   <script type="text/javascript">
 
-    function loadPage_old() {
-      var xmlhttp = new XMLHttpRequest();
-      xmlhttp.onreadystatechange = function() 
-      {
-        if (this.readyState == 4 && this.status == 200) 
-        {
-          var myObj = JSON.parse(this.responseText);
-          document.getElementById("mainbody").innerHTML = myObj.mainbody;
-        }
-      };
-      xmlhttp.open("GET", "muhrec.json", true);
-      xmlhttp.send();
-    };
-
     function loadPage() {
-    let requestURL = 'muhrec.json';
+    let requestURL = 'https://neutronimaging.github.io/pages/muhrec.json';
 
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
