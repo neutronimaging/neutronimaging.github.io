@@ -13,7 +13,6 @@
     <!-- NAVBAR  -->
 
   	<nav class="navbar navbar-default navbar-fixed-top">
-
         <!-- Inside of a Container -->
       <div class="container-fluid">
   
@@ -21,22 +20,19 @@
         <!-- This is the actual code that create the "hamburger icon" -->
         <!-- The data-target grabs ids to put into the icon -->
         <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:loadPage('https://neutronimaging.github.io/pages/muhrec_main.json')"><img src="images/muh4_icon.svg" style="width:40px"></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-  
             <!--  Code for the hamburger icon-->
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-  
-       <!--   <a class="navbar-brand" href="#"><img src="https://www.psi.ch/themes/custom/design/psi.svg" style="width:90px"></a>-->
         </div>
   
         <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="<script>loadPage();</script>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home<span class="caret"></span></a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Releases<span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -97,7 +93,7 @@
         <div class="col-lg-3 col-sm-6 boxy">
           <a href="muhrec_main.js">
             <div align="center">
-            <img src="figures/muh4_icon.svg" style="width:150px">
+            <img src="images/muh4_icon.svg" style="width:150px">
             </div>
             <p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>
           </a>
@@ -105,7 +101,7 @@
         <div class="col-lg-3 col-sm-6 boxy" >
           <a href="kiptool_main.js">
             <div align="center">
-              <img src="figures/kiptool_icon.svg" style="width:150px">
+              <img src="images/kiptool_icon.svg" style="width:150px">
             </div>
             <p>KipTool is an image processing tool originally intened to work with 3D data. Meanwhile a set of tools are provided to allow basic file processing etc.</p>
           </a>
@@ -113,7 +109,7 @@
         <div class="col-lg-3 col-sm-6 boxy">
           <a href="ngitool_main.js">
             <div align="center">
-              <img src="figures/ngi_icon.svg" style="width:150px">
+              <img src="images/ngi_icon.svg" style="width:150px">
             </div>
             <p>nGITool is a reduction tool to transform phase stepping data into transmission, differential phase contrast, and dark field images.</p>
           </a>
@@ -121,7 +117,7 @@
         <div class="col-lg-3 col-sm-6 boxy">
           <a href="niqa_main.js">
             <div align="center">
-              <img src="figures/NIQAIcon.svg" style="width:150px">
+              <img src="images/NIQAIcon.svg" style="width:150px">
             </div>
             <p>This is a tool developed to support participants in the IAEA imaging QA round robin to analyze their data.</p>
           </a>
@@ -158,8 +154,8 @@
 
   <script type="text/javascript">
 
-    function loadPage() {
-    let requestURL = 'https://neutronimaging.github.io/pages/muhrec.json';
+    function loadPage(pageFile) {
+    let requestURL = pageFile; 
 
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);

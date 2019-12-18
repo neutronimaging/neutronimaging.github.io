@@ -1,0 +1,39 @@
+{
+    "header" : "<h1>Software for neutron imaging</h1>",
+    "mainbody" : "<p>An imaging experiment usually produce large data sets that need to be processed to provide the answers you seek. This requires knowledge, experience, time, and not to forget the right tools. The aim of this site is to provide neutron imaging users with free and open source tools that helps in the process of evaluating their imaging data.</p>
+    <h2>Tools provided in the project</h2>
+    <div class=\"row row-eq-height\">
+      <div class=\"col-lg-3 col-sm-6 boxy\">
+        <a href=\"muhrec_main.js\">
+          <div align=\"center\">
+          <img src=\"images/muh4_icon.svg\" style=\"width:150px\">
+          </div>
+          <p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>
+        </a>
+      </div>
+      <div class=\"col-lg-3 col-sm-6 boxy\" >
+        <a href=\"kiptool_main.js\">
+          <div align=\"center\">
+            <img src=\"images/kiptool_icon.svg\" style=\"width:150px\">
+          </div>
+          <p>KipTool is an image processing tool originally intened to work with 3D data. Meanwhile a set of tools are provided to allow basic file processing etc.</p>
+        </a>
+      </div>
+      <div class=\"col-lg-3 col-sm-6 boxy\">
+        <a href=\"ngitool_main.js\">
+          <div align=\"center\">
+            <img src=\"images/ngi_icon.svg\" style=\"width:150px\">
+          </div>
+          <p>nGITool is a reduction tool to transform phase stepping data into transmission, differential phase contrast, and dark field images.</p>
+        </a>
+      </div>
+      <div class=\"col-lg-3 col-sm-6 boxy\">
+        <a href=\"niqa_main.js\">
+          <div align=\"center\">
+            <img src=\"images/NIQAIcon.svg\" style=\"width:150px\">
+          </div>
+          <p>This is a tool developed to support participants in the IAEA imaging QA round robin to analyze their data.</p>
+        </a>
+      </div>
+</div>"
+}
