@@ -1,11 +1,23 @@
 {
-    "header" : "<h1>nGI tool</h1>",
-    "mainbody" : "<p>Hello world</p><h2>Features in nGITool</h2>",
+    "header" : "<h1><img src=\"images/ngi_icon.svg\" style=\"height:2em\">nGI tool</h1>",
+    "mainbody" : "<p>Talbot-Laue interferometry is an experiment technique that provides differential phase contrast and dark field images in addition to the transmission image. This is an indirect method that requires a reduction step to obtain the final information.</p><p>The underlying concept of the reduction is independent of the imaging modality. Therefore, this tool can also be used with data from x-ray experiments.</p>",
     "features" : [
-        {"feature" : "nGITool", 
-            "image" : "images/muh4_icon.svg", 
+        {"feature" : "User interface", 
+            "image" : "images/ngi_icon.svg", 
+            "description" :"<p>The user interface in designed to allow the user to configure and run the reduction process of one or several phase stepping scans.</p>", 
+            "page" : ""},
+        {"feature" : "What does it do", 
+            "image" : "images/sine_curves.svg", 
+            "description" :"<p>The reduction of grating phase stepping data is based on estimating the amplitude and bias of the intensity for each pixel in the image. This is done in an efficient and robust manner.</p>", 
+            "page" : ""},
+        {"feature" : "Different acquisition schemes", 
+            "image" : "images/ngi_icon.svg", 
             "description" :"<p></p>", 
-            "page" : ""}
+            "page" : ""},
+        {"feature" : "Development", 
+                "image" : "images/ngi_icon.svg", 
+                "description" :"<p>Currently, there is no active development. Next steps are to increase the flexibility for alternative acquisition schemes and to improve estimation performance for low SNR data.</p>", 
+                "page" : ""}    
         ]
 }
 
