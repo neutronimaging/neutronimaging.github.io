@@ -29,18 +29,19 @@ function loadPageWithFeatures(pageFile) {
       if (Array.isArray(pageContents.features) && pageContents.features.length) {
         bodyText += "<div class=\"row row-eq-height\">";
           for (i in pageContents.features) {
+            bodyText += "<div class=\"col-lg-3 col-sm-6 boxy\">";
+              bodyText += "<h3>" + pageContents.features[i].feature + "</h3>";
               if (!pageContents.features[i].page || pageContents.features[i].page.length === 0) {
-                bodyText += "<div class=\"col-lg-3 col-sm-6 boxy\">";
                 bodyText += "<div align=\"center\"><img src=\"" + pageContents.features[i].image + "\" style=\"width:150px\"></div>";
                 bodyText += pageContents.features[i].description;
-                bodyText += "</div>";
               } 
               else {
-                bodyText += "<div class=\"col-lg-3 col-sm-6 boxy\"><a href=\"javascript:loadPageWithFeatures('https://neutronimaging.github.io/" + pageContents.features[i].page  + "')\">";
+                bodyText += "<a href=\"javascript:loadPageWithFeatures('https://neutronimaging.github.io/" + pageContents.features[i].page  + "')\">";
                 bodyText += "<div align=\"center\"><img src=\"" + pageContents.features[i].image + "\" style=\"width:150px\"></div>";
                 bodyText += pageContents.features[i].description;
-                bodyText += "</a></div>";
+                bodyText += "</a>";
               }
+              bodyText += "</div>";
           }
 
         bodyText += "</div>"  
