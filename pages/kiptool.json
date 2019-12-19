@@ -1,10 +1,22 @@
 {
-    "header" : "<h1>KipTool</h1>",
-    "mainbody" : "<p>Hello world</p><h2>Features of KipTool</h2>",
+    "header" : "<h1>KipTool <img src=\"images/kiptool_icon.svg\"></h1>",
+    "mainbody" : "<p>KipTool is a tool for processing 3D image data. It was developed for neutron imaging applications, but the general nature of many features makes it also useful for 3D data from other modalites.</p><h2>Features of KipTool</h2>",
     "features" : [
-        {"feature" : "KipTool", 
+        {"feature" : "User interface", 
             "image" : "images/muh4_icon.svg", 
             "description" :"<p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>", 
-            "page" : ""}
+            "page" : ""},
+        {"feature" : "Modular architecture", 
+            "image" : "images/muh4_icon.svg", 
+            "description" :"<p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>", 
+            "page" : ""} ,  
+        {"feature" : "File conversion tools", 
+            "image" : "images/muh4_icon.svg", 
+            "description" :"<p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>", 
+            "page" : ""},
+            {"feature" : "Advanced filters", 
+                "image" : "images/muh4_icon.svg", 
+                "description" :"<p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>", 
+                "page" : ""}
         ]
 }
