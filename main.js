@@ -30,7 +30,9 @@ function loadPageWithFeatures(pageFile) {
         bodyText += "<div class=\"row row-eq-height\">";
           for (i in pageContents.features) {
             bodyText += "<div class=\"col-lg-3 col-sm-6 boxy\">";
-              bodyText += "<h3>" + pageContents.features[i].feature + "</h3>";
+              if (pageContents.features[i].feature && pageContents.features[i].feature.length!==0) {
+                bodyText += "<h3>" + pageContents.features[i].feature + "</h3>";
+              }
               if (!pageContents.features[i].page || pageContents.features[i].page.length === 0) {
                 bodyText += "<div align=\"center\"><img src=\"" + pageContents.features[i].image + "\" style=\"width:150px\"></div>";
                 bodyText += pageContents.features[i].description;

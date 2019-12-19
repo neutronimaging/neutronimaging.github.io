@@ -4,91 +4,73 @@
     <meta charset="utf-8">
     <title>Software for neutron imaging</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   </head>
   <body>
 
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/main.json')"><img src="images/muh4_icon.svg" style="width:40px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/main.json')">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Applications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/muhrec.json')">MuhRec</a>
+                    <a class="dropdown-item" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/kiptool.json')">KipTool</a>
+                    <a class="dropdown-item" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/ngitool.json')">nGITool</a>
+                    <a class="dropdown-item" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/niqa.json')">NIQA</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Releases
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="https://github.com/neutronimaging/imagingsuite/releases">MuhRec</a>
+                      <a class="dropdown-item" href="https://github.com/neutronimaging/KipTool/releases">KipTool</a>
+                      <a class="dropdown-item" href="https://github.com/neutronimaging/nGITool/releases">nGITool</a>
+                      <a class="dropdown-item" href="https://github.com/neutronimaging/ImagingQuality/releases">NIQA</a>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://github.com/neutronimaging/imagingsuite">MuhRec and Core library</a>
+                        <a class="dropdown-item" href="https://github.com/neutronimaging/KipTool">KipTool</a>
+                        <a class="dropdown-item" href="https://github.com/neutronimaging/nGITool">nGITool</a>
+                        <a class="dropdown-item" href="https://github.com/neutronimaging/ImagingQuality">NIQA</a>
+                    </div>
+              </li>
+              <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/about.json')">About the project</a>>
+                        <a class="dropdown-item" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/background.json')">Background</a>
+                        <a class="dropdown-item" href="https://github.com/neutronimaging/imagingsuite/wiki">Project wiki</a>
+                        <a class="dropdown-item" href="https://github.com/orgs/neutronimaging/projects">Project status</a>
+                        <a class="dropdown-item" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/privacy.json')">Privacy policy</a>
+                    </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
     <!-- NAVBAR  -->
 
-  	<nav class="navbar navbar-default navbar-fixed-top">
-        <!-- Inside of a Container -->
-      <div class="container-fluid">
-  
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <!-- This is the actual code that create the "hamburger icon" -->
-        <!-- The data-target grabs ids to put into the icon -->
-        <div class="navbar-header">
-            <a class="navbar-brand" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/main.json')"><img src="images/muh4_icon.svg" style="width:40px"></a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <!--  Code for the hamburger icon-->
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-  
-        <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Applications<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/muhrec.json')">MuhRec</a></li>
-                    <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/kiptool.json')">KipTool</a></li>
-                    <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/ngitool.json')">nGITool</a></li>
-                    <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/niqa.json')">NIQA</a></li>
-                  </ul>
-                </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Releases<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://github.com/neutronimaging/imagingsuite/releases">MuhRec</a></li>
-                <li><a href="https://github.com/neutronimaging/KipTool/releases">KipTool</a></li>
-                <li><a href="https://github.com/neutronimaging/nGITool/releases">nGITool</a></li>
-                <li><a href="https://github.com/neutronimaging/ImagingQuality/releases">NIQA</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sources<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://github.com/neutronimaging/imagingsuite">MuhRec and Core library</a></li>
-                <li><a href="https://github.com/neutronimaging/KipTool">KipTool</a></li>
-                <li><a href="https://github.com/neutronimaging/nGITool">nGITool</a></li>
-                <li><a href="https://github.com/neutronimaging/ImagingQuality">NIQA</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/about.json')">About the project</a>></li>
-                  <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/background.json')">Background</a></li>
-                  <li><a href="https://github.com/neutronimaging/imagingsuite/wiki">Project wiki</a></li>
-                  <li><a href="https://github.com/orgs/neutronimaging/projects">Project status</a></li>
-                  <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/privacy.json')">Privacy policy</a></li>
-                </ul>
-              </li>
-          </ul>
-                  <!-- SEARCH BAR -->
-        <!-- <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form> -->
-
-
-        <!-- Stuff on the Right -->
-<!--
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Log out</a></li>
-          </ul>
-        -->
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
 
   <div class="container">
     <div class="jumbotron" id="header">
@@ -115,11 +97,12 @@
             </div>
       </div>
     </div>
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script> --> <!-- Latest compiled and minified JavaScript -->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="main.js"></script>
   <script type="text/javascript">loadPageWithFeatures("https://neutronimaging.github.io/pages/main.json");</script>
