@@ -1,4 +1,11 @@
 {
     "header" : "<h1>nGI tool</h1>",
-    "mainbody" : "<p>Hello world</p>"
+    "mainbody" : "<p>Hello world</p><h2>Features in nGITool</h2>",
+    "features" : [
+        {"feature" : "nGITool", 
+            "image" : "images/muh4_icon.svg", 
+            "description" :"<p></p>", 
+            "page" : ""}
+        ]
 }
+

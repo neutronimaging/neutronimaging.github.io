@@ -1,4 +1,10 @@
 {
     "header" : "<h1>KipTool</h1>",
-    "mainbody" : "<p>Hello world</p>"
+    "mainbody" : "<p>Hello world</p><h2>Features of KipTool</h2>",
+    "features" : [
+        {"feature" : "KipTool", 
+            "image" : "images/muh4_icon.svg", 
+            "description" :"<p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>", 
+            "page" : ""}
+        ]
 }

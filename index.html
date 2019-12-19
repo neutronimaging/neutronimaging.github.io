@@ -86,64 +86,25 @@
       <h1>Software for neutron imaging</h1>
     </div>
     <div class="jumbotron" id="mainbody">
-      <p>An imaging experiment usually produce large data sets that need to be processed to provide the answers you seek. This requires knowledge, experience, time, and not to forget the right tools. The aim of this site is to provide neutron imaging users with free and open source tools that helps in the process of evaluating their imaging data.</p>
-
-      <h2>Tools provided in the project</h2>
-      <div class="row row-eq-height">
-        <div class="col-lg-3 col-sm-6 boxy">
-          <a href="javascript:loadPage('https://neutronimaging.github.io/pages/muhrec.json')">
-            <div align="center">
-            <img src="images/muh4_icon.svg" style="width:150px">
-            </div>
-            <p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 boxy" >
-          <a href="javascript:loadPage('https://neutronimaging.github.io/pages/kiptool.json')">
-            <div align="center">
-              <img src="images/kiptool_icon.svg" style="width:150px">
-            </div>
-            <p>KipTool is an image processing tool originally intened to work with 3D data. Meanwhile a set of tools are provided to allow basic file processing etc.</p>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 boxy">
-          <a href="javascript:loadPage('https://neutronimaging.github.io/pages/ngitool.json')">
-            <div align="center">
-              <img src="images/ngi_icon.svg" style="width:150px">
-            </div>
-            <p>nGITool is a reduction tool to transform phase stepping data into transmission, differential phase contrast, and dark field images.</p>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 boxy">
-          <a href="javascript:loadPage('https://neutronimaging.github.io/pages/niqa.json')">
-            <div align="center">
-              <img src="images/NIQAIcon.svg" style="width:150px">
-            </div>
-            <p>This is a tool developed to support participants in the IAEA imaging QA round robin to analyze their data.</p>
-          </a>
-        </div>
+      <script>loadPageWithFeatures("pages/main.json");</script>
     </div>
-
-  </div>
-  <div class="jumbotron" id="footer">
-      <div class="row row-eq-height">
-          <div class="col-lg-6 col-sm-6 boxy">
-            <h3>Project contributors</h3>
-            <div align="center">
-                <a href="https://www.psi.ch"><img src="https://www.psi.ch/themes/custom/design/psi.svg" style="width:90px"></a>
-                <a href="https://europeanspallationsource.se"><img src="https://europeanspallationsource.se/themes/custom/ess/logo.svg" style="width:90px"></a> 
+    <div class="jumbotron" id="footer">
+        <div class="row row-eq-height">
+            <div class="col-lg-6 col-sm-6 boxy">
+              <h3>Project contributors</h3>
+              <div align="center">
+                  <a href="https://www.psi.ch"><img src="https://www.psi.ch/themes/custom/design/psi.svg" style="width:90px"></a>
+                  <a href="https://europeanspallationsource.se"><img src="https://europeanspallationsource.se/themes/custom/ess/logo.svg" style="width:90px"></a> 
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-sm-6 boxy" >
-            <h3>Supporting organizations</h3>
-            <div align="center">
-                <a href="https://sine2020.eu"><img src="https://sine2020.eu/files/sine2020_final.jpg" style="width:90px"></a>
+            <div class="col-lg-6 col-sm-6 boxy" >
+              <h3>Supporting organizations</h3>
+              <div align="center">
+                  <a href="https://sine2020.eu"><img src="https://sine2020.eu/files/sine2020_final.jpg" style="width:90px"></a>
+              </div>
+
             </div>
-
-          </div>
-    </div>
-     
-
+      </div>
     </div>
   <script
   src="https://code.jquery.com/jquery-3.1.1.js"
@@ -154,7 +115,7 @@
 
   <script type="text/javascript">
 
-    function loadPage(pageFile) {
+    function loadPage_basic(pageFile) {
     let requestURL = pageFile; 
 
     let request = new XMLHttpRequest();
@@ -169,6 +130,38 @@
     request.responseType = 'json';
     request.send();
     };
+
+    function loadPageWithFeatures(pageFile) {
+      let requestURL = pageFile; 
+
+      let request = new XMLHttpRequest();
+      request.open('GET', requestURL);
+      request.onload = function() {
+        const pageContents = request.response;
+        if (pageContents.header != 0)
+          document.getElementById("header").innerHTML = pageContents.header;
+        if (pageContents.mainbody != 0) {
+          var bodyText = pageContents.mainbody;
+
+          if (Array.isArray(pageContents.features) && pageContents.features.length) {
+            bodyText += "<div class=\"row row-eq-height\">";
+              for (i in pageContents.features) {
+                bodyText += "<div class=\"col-lg-3 col-sm-6 boxy\"><a href=\"javascript:loadPage('https://neutronimaging.github.io/pages/muhrec.json')\">";
+                bodyText += "<div align=\"center\"><img src=\"" + pageContents.features[i].image + "\" style=\"width:150px\"></div>";
+                bodyText += pageContents.features[i].description;
+                bodyText += "</a></div>";
+              }
+
+            bodyText += "</div>"  
+          }
+
+          document.getElementById("mainbody").innerHTML = bodyText;
+        }
+          
+      };
+      request.responseType = 'json';
+      request.send();
+    }
 
   </script>
   </body>
