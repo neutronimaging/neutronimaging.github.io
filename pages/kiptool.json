@@ -1,5 +1,5 @@
 {
-    "header" : "<h1><img src=\"images/kiptool_icon.svg\" style=\"height:1em\">KipTool</h1>",
+    "header" : "<h1><img src=\"images/kiptool_icon.svg\" style=\"height:2em\">KipTool</h1>",
     "mainbody" : "<p>KipTool is a tool for processing 3D image data. It was developed for neutron imaging applications, but the general nature of many features makes it also useful for 3D data from other modalites.</p>",
     "features" : [
         {"feature" : "User interface", 

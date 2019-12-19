@@ -31,7 +31,7 @@ function loadPageWithFeatures(pageFile) {
           for (i in pageContents.features) {
             bodyText += "<div class=\"col-lg-3 col-sm-6 boxy\">";
               if (pageContents.features[i].feature && pageContents.features[i].feature.length!==0) {
-                bodyText += "<h3>" + pageContents.features[i].feature + "</h3>";
+                bodyText += "<h4>" + pageContents.features[i].feature + "</h4>";
               }
               if (!pageContents.features[i].page || pageContents.features[i].page.length === 0) {
                 bodyText += "<div align=\"center\"><img src=\"" + pageContents.features[i].image + "\" style=\"width:150px\"></div>";
