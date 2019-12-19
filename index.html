@@ -20,7 +20,7 @@
         <!-- This is the actual code that create the "hamburger icon" -->
         <!-- The data-target grabs ids to put into the icon -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="javascript:loadPage('https://neutronimaging.github.io/pages/main.json')"><img src="images/muh4_icon.svg" style="width:40px"></a>
+            <a class="navbar-brand" href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/main.json')"><img src="images/muh4_icon.svg" style="width:40px"></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <!--  Code for the hamburger icon-->
             <span class="sr-only">Toggle navigation</span>
@@ -33,6 +33,15 @@
         <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Applications<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/muhrec.json')">MuhRec</a></li>
+                    <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/kiptool.json')">KipTool</a></li>
+                    <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/ngitool.json')">nGITool</a></li>
+                    <li><a href="javascript:loadPageWithFeatures('https://neutronimaging.github.io/pages/niqa.json')">NIQA</a></li>
+                  </ul>
+                </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Releases<span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -86,7 +95,7 @@
       <h1>Software for neutron imaging</h1>
     </div>
     <div class="jumbotron" id="mainbody">
-      <script>loadPageWithFeatures("pages/main.json");</script>
+    Main body
     </div>
     <div class="jumbotron" id="footer">
         <div class="row row-eq-height">
@@ -112,57 +121,7 @@
   crossorigin="anonymous"></script>  <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-  <script type="text/javascript">
-
-    function loadPage_basic(pageFile) {
-    let requestURL = pageFile; 
-
-    let request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.onload = function() {
-      const pageContents = request.response;
-      if (pageContents.header != 0)
-        document.getElementById("header").innerHTML = pageContents.header;
-      if (pageContents.mainbody != 0)
-        document.getElementById("mainbody").innerHTML = pageContents.mainbody;
-    };
-    request.responseType = 'json';
-    request.send();
-    };
-
-    function loadPageWithFeatures(pageFile) {
-      let requestURL = pageFile; 
-
-      let request = new XMLHttpRequest();
-      request.open('GET', requestURL);
-      request.onload = function() {
-        const pageContents = request.response;
-        if (pageContents.header != 0)
-          document.getElementById("header").innerHTML = pageContents.header;
-        if (pageContents.mainbody != 0) {
-          var bodyText = pageContents.mainbody;
-
-          if (Array.isArray(pageContents.features) && pageContents.features.length) {
-            bodyText += "<div class=\"row row-eq-height\">";
-              for (i in pageContents.features) {
-                bodyText += "<div class=\"col-lg-3 col-sm-6 boxy\"><a href=\"javascript:loadPage('https://neutronimaging.github.io/pages/muhrec.json')\">";
-                bodyText += "<div align=\"center\"><img src=\"" + pageContents.features[i].image + "\" style=\"width:150px\"></div>";
-                bodyText += pageContents.features[i].description;
-                bodyText += "</a></div>";
-              }
-
-            bodyText += "</div>"  
-          }
-
-          document.getElementById("mainbody").innerHTML = bodyText;
-        }
-          
-      };
-      request.responseType = 'json';
-      request.send();
-    }
-
-  </script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript">loadPageWithFeatures("https://neutronimaging.github.io/pages/main.json");</script>
   </body>
 </html>
