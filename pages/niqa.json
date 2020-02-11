@@ -1,10 +1,24 @@
 {
     "header" : "<h1>Neutron imaging QA</h1>",
-    "mainbody" : "<p>Hello world</p>",
+    "mainbody" : "<p>The NIQA tool is currently under development and there are still some issues that needs to taken care of before we can release.</p>",
     "features" : [
-        {"feature" : "NIQA", 
-            "image" : "images/muh4_icon.svg", 
-            "description" :"<p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>", 
+        {"feature" : "Contrast analysis", 
+            "image" : "images/NIQAIcon.svg", 
+            "description" :"<p>This tools analyses the tomography of the contrast sample.</p>", 
+            "page" : ""},
+        {"feature" : "Edge analysis", 
+            "image" : "images/NIQAIcon.svg", 
+            "description" :"<p>This tools analyses edge sharpness from radiographs. It is possible to estimate the L/D many radiographs at increasing distance.</p>", 
+            "page" : ""},
+        {"feature" : "Ball packing", 
+            "image" : "images/NIQAIcon.svg", 
+            "description" :"<p>The ballpacking sample contain features with different sizes.</p>", 
+            "page" : ""},
+        {"feature" : "3D resolution", 
+            "image" : "images/NIQAIcon.svg", 
+            "description" :"<p>The edge profile from a sphere is extracted with this tool.</p>", 
             "page" : ""}
+                    
+
         ]
 }
