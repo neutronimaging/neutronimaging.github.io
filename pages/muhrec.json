@@ -1,5 +1,5 @@
 {
-    "header" : "<h1><img src=\"images/muh4_icon.svg\" style=\"height:2em\">MuhRec</h1>",
+    "header" : "<h1><img src=\"images/muh4_icon.svg\" style=\"height:2em\">MuhRec</h1><p><b>News</b> - MuhRec 4.2 was released on Februray 10th.</p>",
     "mainbody" : "<p>Tomography is a main experiment technique in neutron imaging that produces 3D images of the sample. It is an indirect technique where the acquired projections have to be transformed to obtain the volume image.</p><p>Muhrec is a tomography tool that helps the user to perform the reconstruction task. This includes normalization, correction, finally the backprojection that produces the volume data.</p>",
     "features" : [
         {"feature" : "User interface", 
@@ -7,7 +7,7 @@
             "description" :"<p>MuhRec is a tomography reconstruction software. It has a user friendly interface that helps the user to configure the reconstruction processing chain.</p>", 
             "page" : ""},
         {"feature" : "Reconstruction", 
-            "image" : "images/muh4_icon.svg", 
+            "image" : "figures/CTacq.svg", 
             "description" :"<p>Different experiment geometries and conditions, this rises the need to apply different reconstruction techniques. MuhRec currently support reconstruction using filtered backproject for parallel and cone beam geometry.</p>", 
             "page" : ""},
         {"feature" : "Artifact reduction", 
@@ -15,9 +15,13 @@
             "description" :"<p>Outliers in the projection data are the origin of reconstruction artifacts like rings and lines.</p>", 
             "page" : ""},    
         {"feature" : "Scattering correction", 
-            "image" : "images/muh4_icon.svg", 
+            "image" : "figures/bb_scattering.png", 
             "description" :"<p>Scattering is the dominating interaction of neutron matter for many elements. This has the consequence that scattered neutrons introduce a significant bias on the measured projections. MuhRec provides methods to correct for this bias.</p>", 
-            "page" : ""},          
+            "page" : ""},  
+        {"feature" : "User manual",
+            "image" : "figures/documentation.svg",
+            "description": "MuhRec comes with a user manual that guides you through your first reconstruction and beyond.",
+            "page" : "https://github.com/neutronimaging/imagingsuite/wiki/User-manual-MuhRec"}    
         {"feature" : "Development", 
             "image" : "images/python-logo.svg", 
             "description" :"<p>Currently, we are working on improving the workflow for mass reconstruction of time series or wavelength resolved experiments. This work includes binding the C++ code into python and algorithm tuning for faster processing.</p>", 
