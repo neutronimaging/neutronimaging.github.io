@@ -1,5 +1,5 @@
 {
-    "header" : "<h1>Neutron imaging QA</h1>",
+    "header" : "<h1><img src=\"images/NIQAIcon.svg\" style=\"height:2em\">Neutron imaging QA</h1>",
     "mainbody" : "<p>The NIQA tool is currently under development and there are still some issues that needs to taken care of before we can release.</p>",
     "features" : [
         {"feature" : "Contrast analysis", 
