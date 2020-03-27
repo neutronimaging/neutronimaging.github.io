@@ -38,7 +38,16 @@ function loadPageWithFeatures(pageFile) {
                 bodyText += pageContents.features[i].description;
               } 
               else {
-                bodyText += "<a href=\"javascript:loadPageWithFeatures('https://neutronimaging.github.io/" + pageContents.features[i].page  + "')\">";
+                if (pageContents.features[i].page.substring(0,4)=="http")
+                {
+                  bodyText += "<a href=\"" + pageContents.features[i].page  + "\">";
+                }
+                else
+                {
+                  bodyText += "<a href=\"javascript:loadPageWithFeatures('https://neutronimaging.github.io/" + pageContents.features[i].page  + "')\">";
+                }
+
+                
                 bodyText += "<div align=\"center\"><img src=\"" + pageContents.features[i].image + "\" style=\"width:150px\"></div>";
                 bodyText += pageContents.features[i].description;
                 bodyText += "</a>";
