@@ -1,5 +1,7 @@
 # Poster presented at ICNS-2025
 
+<img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-poster.png" style="height:300px" />
+
 ## Tomography Reconstruction for Neutron Imaging – New MuhRec Releases
 Anders Kaestner (1) and Christian Vedel (2)
 1. PSI Center for Neutron and Muon Sciences, 5232 Villigen PSI, Switzerland
@@ -11,5 +13,10 @@ The latest releases focus on improving performance, robustness, and software mai
 To simplify deployment, cross-platform installers have been introduced for supported operating systems, making the software easier to install and update. These engineering developments provide a solid foundation for future feature additions and broader adoption within the imaging community.
 The software is actively maintained at https://github.com/neutronimaging/imagingsuite, where contributions and feedback from the community are welcome.
 
-## Teaser video
-Will be available on YouTube 
+## Downloads
+
+<img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/muh4_download.png" style="height:200px"/>
+
+- [Poster](https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-MuhRecPoster.pdf)
+- [Download MuhRec](https://github.com/neutronimaging/imagingsuite/releases)
+- [Python]()
