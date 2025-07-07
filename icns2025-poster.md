@@ -2,20 +2,22 @@
 
 <table>
 <tr>
-<td><img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-poster.png" style="height:300px" /><br />
+<td>
+<img src="https://neutronimaging.github.io/figures/ICNS2025-poster.png" style="height:300px" />
 </td>
 <td>
-<img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/muh4_download.png" style="height:100px"/>
+<img src="https://neutronimaging.github.io/figures/muh4_download.png" style="height:200px"/>
 </td>
 </tr>  
 <tr>
 <td>
-<a href="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-MuhRecPoster.pdf">Download poster</a>
+<a href="https://neutronimaging.github.io/figures/ICNS2025-MuhRecPoster.pdf">Download poster</a>
 </td>
 <td>
 <ul>  
 <li><a href="https://github.com/neutronimaging/imagingsuite/releases">Download MuhRec application for Windows, MacOS, and Ubuntu</a><br/></li>
-<li><b>Python</b> <code>pip install -v pymuhrec --extra-index-url https://easyscience.github.io/pypi/</code></li></ul>  
+<li><b>Python</b> <code>pip install -v pymuhrec --extra-index-url https://easyscience.github.io/pypi/</code></li>
+</ul>  
 </td>
 </tr>
 </table>
