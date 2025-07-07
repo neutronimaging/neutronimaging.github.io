@@ -1,6 +1,21 @@
 # Poster presented at ICNS-2025
 
-<img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-poster.png" style="height:300px" />
+<tr>
+  <td><img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-poster.png" style="height:300px" />
+  <br />
+  
+  [Download poster](https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-MuhRecPoster.pdf)
+  
+  </td>
+  <td>
+<img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/muh4_download.png" style="height:100px"/>
+
+- [__Download MuhRec__](https://github.com/neutronimaging/imagingsuite/releases)
+- __Python__ ```pip install -v pymuhrec --extra-index-url https://easyscience.github.io/pypi/```
+    
+  </td>
+</tr>
+
 
 ## Tomography Reconstruction for Neutron Imaging – New MuhRec Releases
 Anders Kaestner (1) and Christian Vedel (2)
@@ -15,8 +30,4 @@ The software is actively maintained at https://github.com/neutronimaging/imaging
 
 ## Downloads
 
-<img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/muh4_download.png" style="height:200px"/>
 
-- [Poster](https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-MuhRecPoster.pdf)
-- [Download MuhRec](https://github.com/neutronimaging/imagingsuite/releases)
-- [Python]()
