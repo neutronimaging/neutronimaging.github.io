@@ -1,19 +1,17 @@
 # Poster presented at ICNS-2025
 
 <tr>
-  <td><img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-poster.png" style="height:300px" />
-  <br />
+<td><img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-poster.png" style="height:300px" /><br />
   
-  [Download poster](https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-MuhRecPoster.pdf)
+[Download poster](https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-MuhRecPoster.pdf)
   
-  </td>
-  <td>
+</td><td>
 <img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/muh4_download.png" style="height:100px"/>
 
 - [__Download MuhRec__](https://github.com/neutronimaging/imagingsuite/releases)
 - __Python__ ```pip install -v pymuhrec --extra-index-url https://easyscience.github.io/pypi/```
     
-  </td>
+</td>
 </tr>
 
 
@@ -28,6 +26,5 @@ The latest releases focus on improving performance, robustness, and software mai
 To simplify deployment, cross-platform installers have been introduced for supported operating systems, making the software easier to install and update. These engineering developments provide a solid foundation for future feature additions and broader adoption within the imaging community.
 The software is actively maintained at https://github.com/neutronimaging/imagingsuite, where contributions and feedback from the community are welcome.
 
-## Downloads
 
 
