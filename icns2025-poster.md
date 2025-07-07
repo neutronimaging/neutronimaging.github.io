@@ -3,10 +3,12 @@
 <table>
 <tr>
 <td>
-<img src="https://neutronimaging.github.io/figures/ICNS2025-poster.png" style="height:300px" />
+<img src="https://neutronimaging.github.io/figures/ICNS2025-poster.png" style="height:200px" />
 </td>
 <td>
+<center>
 <img src="https://neutronimaging.github.io/figures/muh4_download.png" style="height:200px"/>
+</center>
 </td>
 </tr>  
 <tr>
