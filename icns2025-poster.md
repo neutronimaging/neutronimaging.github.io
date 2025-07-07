@@ -17,7 +17,7 @@
 </td>
 <td>
 <ul>  
-<li><a href="https://github.com/neutronimaging/imagingsuite/releases">Download MuhRec application for Windows, MacOS, and Ubuntu</a><br/></li>
+<li><a href="https://github.com/neutronimaging/imagingsuite/releases">Download MuhRec application</a><br/></li>
 <li><b>Python</b> <code>pip install -v pymuhrec --extra-index-url https://easyscience.github.io/pypi/</code></li>
 </ul>  
 </td>
