@@ -1,5 +1,6 @@
 # Poster presented at ICNS-2025
 
+<table>
 <tr>
 <td><img src="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-poster.png" style="height:300px" /><br />
 <a href="https://github.com/neutronimaging/neutronimaging.github.io/blob/master/figures/ICNS2025-MuhRecPoster.pdf">Download poster</a>
@@ -11,6 +12,7 @@
 <b>Python</b> <code>pip install -v pymuhrec --extra-index-url https://easyscience.github.io/pypi/</code>
 </td>
 </tr>
+</table>
 
 
 ## Tomography Reconstruction for Neutron Imaging – New MuhRec Releases
